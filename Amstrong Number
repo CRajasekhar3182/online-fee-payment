@@ -1,0 +1,58 @@
+#include<stdio.h>
+int main()
+{
+    int n,ans=1;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        ans=ans*n;
+        n--;
+    }
+    printf("%d",ans);
+    
+}
+nested if
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int category,item;
+    printf("press 1 for tiffin\n");
+    printf("press 2 for fast food\n");
+    printf("press 3 for fruits\n");
+    printf(" Enter category no :");
+    scanf("%d",&category);
+    
+    if(category == 1)
+    {
+        printf("press 1 for idli\n");
+        printf("press 2 for dosa\n");
+        printf("press 3 for poori\n");
+        
+         printf("Enter a no :");
+         scanf("%d",&item);
+         
+         if(item == 1)
+         {
+           printf("you ordered idli");
+         }
+         else if(item == 2)
+         {
+            printf(" you ordered dosa");
+         }
+          else if(item == 3)
+         {
+            printf(" you ordered poori");
+         }
+       
+         else 
+         printf("Invalid option");
+    }
+     if(category == 2)
+    {
+        printf("press 1 for Noodles\n");
+        printf("press 2 for manchuria\n");
+        printf("press 3 for fried rice\n");
+        
+         printf("Enter a no :");
+         scanf("%d",&item);
